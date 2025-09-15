@@ -21,6 +21,14 @@
                 {{ $errors->first() }}
             </div>
         @endif
+
+        <!-- 🔹 Link ke Register -->
+        <p class="mt-4 text-center text-gray-600">
+            Belum punya akun?
+            <a href="{{ route('register') }}" class="text-blue-600 hover:underline">
+                Daftar
+            </a>
+        </p>
     </div>
 </body>
 </html>
