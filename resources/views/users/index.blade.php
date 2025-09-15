@@ -22,14 +22,11 @@
                 <td class="border p-2">{{ $user->role }}</td>
                 <td class="border p-2">
                     <a href="{{ route('users.edit', $user) }}" class="text-blue-600 hover:underline">Edit</a>
-                   <form action="{{ route('users.destroy', $user) }}" method="POST" class="inline">
-    @csrf
-    @method('DELETE')
-    <button type="submit" class="text-red-600 hover:underline"
-        onclick="return confirm('Yakin hapus user ini?')">
-        Hapus
-    </button>
-</form>
+                    <form action="{{ route('users.destroy', $user) }}" method="POST" class="inline">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="text-red-600 hover:underline" onclick="return confirm('Yakin hapus user ini?')">Hapus</button>
+                    </form>
                 </td>
             </tr>
             @endforeach
