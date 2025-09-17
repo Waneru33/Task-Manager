@@ -7,11 +7,6 @@
     <nav class="space-y-4">
         @if(auth()->check())
             @if(auth()->user()->role === 'admin')
-                <a href="{{ route('users.index') }}"
-                   class="flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-300 hover:bg-blue-500 hover:shadow-md hover:translate-x-1">
-                    <i data-lucide="users" class="w-5 h-5"></i>
-                    <span class="font-medium">Kelola User</span>
-                </a>
 
                 <a href="{{ route('projects.index') }}"
                    class="flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-300 hover:bg-blue-500 hover:shadow-md hover:translate-x-1">
